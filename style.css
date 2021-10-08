@@ -6,7 +6,7 @@ html, body
 
 body
 {
-background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
+background-color: black;
 }
 
 .header
@@ -20,7 +20,7 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 
 .login_div
 {
-	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+	background: black;float: none;border-radius: 15px;
 }
 
 .logo
@@ -31,6 +31,8 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 #login_button
 {
 	width: 80%;border-radius: 15px;
+	color: black;
+	background-color: whitesmoke;
 }
 
 .room_name
@@ -91,4 +93,17 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 .message_h4
 {
 	padding-left:5px;color:grey;
+}
+#H3
+{
+color: white;
+}
+
+#Label
+{
+color: whitesmoke;
+}
+#Room_Add_Label
+{
+	color: white;
 }

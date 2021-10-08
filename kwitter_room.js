@@ -24,6 +24,8 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       });});}
 getData();
 function logout(){
+  localStorage.removeItem("user")
+  localStorage.removeItem("cool_kids_key")
   window.location = "index.html"
 }
 function addition(){

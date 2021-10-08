@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cool Kids</title>
+	<title>Chat</title>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -14,29 +14,30 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
+
 <div class="container">
-<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<button id="Back" class="glyphicon glyphicon-log-out btn btn-danger" onclick="Back()">Back</button>
 	<center>
 		<h1 class="header">	
-			Cool Kids	
+			Cool Kids
 			<sup>
 				<img src="m2.png">
 			</sup>
 		</h1>
-		<h3 class="color_white">Welcome <span id="span_username"></span></h3>
-		<br>
-		<div class="form-group input_div_room_page">
-			<label id="Room_Add_Label">#Add Room:</label>
-            <input id="room_name" class="form-control">
-		</div>
-		<button class="btn btn-success" id="add" onclick="addition()">#Add Room</button>
-		<h3 class="color_white">#ROOMS</h3>
-	<div id="output"></div>
+		<div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
 	</center>
 </div>
-<script src="kwitter_room.js"></script>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Send:</label>
+		<input type="text" id="inpot" class="form-control">
+		<button class="btn btn-success" id="Send" onclick="Send()">Send</button>
+	</div>
+</center>
+
+<script src="kwitter_page.js"></script>
 </body>
 </html>
